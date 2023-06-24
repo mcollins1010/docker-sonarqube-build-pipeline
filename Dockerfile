@@ -3,6 +3,7 @@ FROM  eclipse-temurin:17-jre
 ENV LANG='en_US.UTF-8' \
     LANGUAGE='en_US:en' \
     LC_ALL='en_US.UTF-8'
+LABEL maintainer="liontechologies  <info@liontechacademy.com>"
 
 #
 # SonarQube setup
