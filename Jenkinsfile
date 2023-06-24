@@ -34,6 +34,12 @@ pipeline {
                 }
             }
         } 
+
+        stage("list images") {
+            steps{
+                sh "docker images"
+            }
+        }
         stage('notify teams channel'){
             steps{
 
