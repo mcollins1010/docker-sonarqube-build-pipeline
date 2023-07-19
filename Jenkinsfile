@@ -19,7 +19,7 @@ pipeline {
         stage ("Build Image") {
             steps {
                 script {
-                    // make sure jenkins user has permissions
+                    
                     dockerImage = docker.build registry
                     dockerImage.tag("$BUILD_NUMBER")
                 }
